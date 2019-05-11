@@ -1,2 +1,12 @@
 @import url(./layout/normalize.css);
 @import url(./layout/fonts.css);
+
+@import url(./blocks/wrapper.css);
+@import url(./blocks/name.css);
+@import url(./blocks/button.css);
+@import url(./blocks/bunner.css);
+@import url(./blocks/header.css);
+@import url(./blocks/nav.css);
+@import url(./blocks/pagination.css);
+@import url(./blocks/best.css);
+@import url(./blocks/rewiews.css);

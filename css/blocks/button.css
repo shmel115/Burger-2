@@ -1,0 +1,21 @@
+.button {
+  list-style: none; }
+
+.button__clik {
+  width: 97px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #e45028;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  border: none;
+  outline: none;
+  border-radius: 5px; }

@@ -1,0 +1,23 @@
+.header{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+}
+.logo{
+  display: inline-block;
+  position: relative;
+  z-index: 110;
+  padding-top: 0.75rem;
+}
+.header__menu{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}
+.header__button{
+  display: flex;
+  align-items: center;
+  margin-left: 0.5625rem;  
+}
