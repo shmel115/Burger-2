@@ -1,0 +1,26 @@
+.menu {
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background: url(../../images/menu.png) 50% cover no-repeat; }
+
+.menu__title {
+  position: absolute;
+  top: 110px;
+  left: 90px;
+  color: white;
+  font-size: 4.5rem;
+  font-family: gagalin;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem; }
+
+.menu-accordeon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0; }
