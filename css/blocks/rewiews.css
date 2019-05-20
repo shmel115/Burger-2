@@ -1,3 +1,7 @@
+.rewiews {
+  height: 100vh;
+  min-height: 650px; }
+
 .rewiews__list {
   display: -webkit-box;
   display: -ms-flexbox;

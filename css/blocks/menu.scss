@@ -1,9 +1,10 @@
 .menu{
-  height: 100%;
+  height: 100vh;
+  min-height:650px;
   position: relative;
   display: flex;
   overflow: hidden;
-  background: url(../../images/menu.png) 50% cover no-repeat;
+  background-image: url(../../images/menu.png) 50% cover no-repeat;
 }
 .menu__title{
   position: absolute;
@@ -24,5 +25,46 @@
   bottom: 0;
 }
 .menu-accordeon__item{
-  
+  float: left;
+  height: 100%;
+}
+.menu-accordeon__title{
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  float: left;  
+  background: center center / cover no-repeat;
+  text-decoration: none;
+  position: relative;
+}
+.menu-accordeon__name{
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: gagalin;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+}
+.menu-accordeon__content{
+  width: 550px;
+  height: 100%;
+  float: left;
+  background: rgba(47, 50, 52, 0.93);
+  width: 0;
+  overflow: hidden;
+}
+.menu-accordeon__text{
+  font-family: ubuntu;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.875rem;
+  color: #fff;
+  padding: 3.75rem 1.875rem;
+  width: 100%;
+  line-height: 1.8;
 }

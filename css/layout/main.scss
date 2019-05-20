@@ -36,8 +36,8 @@ button{
 	box-sizing: border-box;
 }
 .section{
-  height: 100%;
-  min-height: 40.625rem;
+  height: 100vh;
+  min-height:650px;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -51,6 +51,8 @@ button{
 
 
 .main{
+  height: 100vh;
+  min-height:650px;
   display: flex;
 	justify-content: space-between;
 	text-decoration: none;
@@ -75,9 +77,9 @@ button{
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 100%;
-  max-width: 58.75rem;
-  min-width: 18.75rem;  
+  position: relative;
+  width: 95%;
+  max-width: 940px;  
 }
 
 /*# sourceMappingURL=main.css.map */
