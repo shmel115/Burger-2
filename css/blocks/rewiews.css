@@ -12,7 +12,13 @@
   height: 100%; }
 
 .rewiews__item {
-  width: 25%; }
+  width: 25%;
+  height: 50%;
+  position: relative;
+  /*@include tablets {
+    width: 50%;
+    height: 25%;
+  }*/ }
   .rewiews__item:hover .rewiews__block {
     opacity: 1; }
 
@@ -95,7 +101,10 @@
   font-weight: 500;
   font-style: normal;
   margin-bottom: 17px;
-  line-height: 24px; }
+  line-height: 24px;
+  /*@include phones{
+    display: none;
+  }*/ }
 
 .rewiews__button {
   display: inline-block;

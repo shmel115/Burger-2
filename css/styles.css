@@ -13,3 +13,12 @@
 @import url(./blocks/team.css);
 @import url(./blocks/menu.css);
 @import url(./blocks/map.css);
+@import url(./blocks/form.css);
+@import url(./blocks/hamburger-menu.css);
+
+$tablets: 768px;
+$phones: 480px;
+
+@import "../css/misc/media/media.css";
+
+@import "../css/misc/mixins/mixins.css";

@@ -12,7 +12,10 @@
 .best__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  /*@include phones {
+    flex-direction: column;
+  }*/ }
 
 .best__item {
   margin: 0;
@@ -30,7 +33,10 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  /*@include phones{
+    flex-direction: row;
+  }*/ }
 
 .best__title {
   margin-top: 133px;
@@ -68,7 +74,10 @@
   font-size: 13px;
   font-weight: 500;
   font-style: normal;
-  margin: 20px; }
+  margin: 20px;
+  /*@include phones{
+    text-align: left;
+  }*/ }
 
 .best__desc-text {
   font-size: 0.875rem;

@@ -1,11 +1,11 @@
-.map{
+.section{
   height: 100vh;
   min-height:650px;
   position: relative;
   display: flex;
   overflow: hidden;
 }
-.map__container{
+.map__big{
   position: absolute;
   top: 0;
   bottom: 0;

@@ -1,5 +1,11 @@
 .name{
   padding-top: 9rem;
+
+  /*@include tablets{
+    padding-top: 0;
+    text-align: center;
+  }
+  */
 }
 .name__first{
   color: #f9b43b;
@@ -9,6 +15,10 @@
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
+
+  /*@include phones{
+    font-size: 50px;
+  }*/
 }
 .name__second{
   width: 406px;
@@ -21,4 +31,8 @@
   line-height: 60px;
   text-transform: lowercase;
   line-height: 1;
+
+  /*@include phones{
+    font-size: 54px;
+  }*/
 }
