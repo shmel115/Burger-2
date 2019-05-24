@@ -1,0 +1,28 @@
+$tablets: 768px;
+$phones: 480px;
+
+@import "./css/misc/media/media.scss";
+
+@import "./css/misc/mixins/mixins.scss";
+
+
+//@import './layout/normalize.scss';
+//@import './layout/fonts.scss';
+
+@import './blocks/wrapper.scss';
+@import './blocks/name.scss';
+@import './blocks/button.scss';
+@import './blocks/bunner.scss';
+@import './blocks/header.scss';
+@import './blocks/nav.scss';
+@import './blocks/pagination.scss';
+@import './blocks/best.scss';
+@import './blocks/rewiews.scss';
+@import './blocks/team.scss';
+@import './blocks/menu.scss';
+@import './blocks/map.scss';
+@import './blocks/form.scss';
+@import './blocks/hamburger-menu.scss';
+
+
+
