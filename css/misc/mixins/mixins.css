@@ -3,7 +3,7 @@
   <svg class=$className viewBox=$icon.viewBox preserveAspectRatio="none">
     <use xlink:href=$icon />
   </svg>
-}
+
 @mixin image(path,className) {
   img(src=requre('images/${path}') class=className)
 }*/

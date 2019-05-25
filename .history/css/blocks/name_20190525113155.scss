@@ -1,0 +1,41 @@
+.name{
+  padding-top: 9rem;
+
+  @include tablets{
+    padding-top: 0;
+    text-align: center;
+  }
+  
+  @include phones{
+    padding: 0 3%;
+  }
+}
+.name__first{
+  color: #f9b43b;
+  font-family: Gagalin;
+  font-size: 72px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+
+  @include phones{
+    font-size: 50px;
+  }
+}
+.name__second{
+  width: 406px;
+  height: 213px;
+  color: #ffffff;
+  font-family: Lifehack;
+  font-size: 65px;
+  font-weight: 500;
+  letter-spacing: -1.63px;
+  line-height: 60px;
+  text-transform: lowercase;
+  line-height: 1;
+
+  @include phones{
+    font-size: 54px;
+  }
+}

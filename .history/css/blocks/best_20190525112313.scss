@@ -1,0 +1,117 @@
+.best{
+  height: 100vh;
+  min-height:650px;
+  display: flex;
+  text-align: center;
+	overflow: visible;
+  margin: 0;
+  background:url(../images/bg.png) center center / cover no-repeat;
+
+  @include phones{
+    background: url(../images/bg.png) no-repeat;
+    background-size: cover;
+    align-items: flex-start;
+    padding-top: 3.125rem;
+  }
+}
+.section{
+  height: 100%;
+  min-height: 40.625rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+
+  @include phones{
+    
+  }
+}
+.best__list{
+  display: flex;
+  
+  @include phones {
+    flex-direction: column;
+  }
+}
+.best__item{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: flex;
+	overflow: hidden;
+	width: 33.3%;
+	flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+
+  @include phones{
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1.5625rem;
+  }
+}	
+.best__title{
+  margin-top: 133px;
+  margin-bottom: 30px;
+  color: #2f3234;
+  font-family: Gagalin;
+  font-size: 72px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.best__avatar{
+	margin: 20px;
+	overflow: hidden;
+	width: 97px;
+  height: 89px;
+	flex-shrink: 0;
+  margin: 20px;
+  
+  @include phones{
+    margin-bottom: 0px;
+    margin-right: 1.25rem;
+    width: 30%;
+  }
+}
+.best__avatar-img{
+  @include phones{
+    position: static;
+    transform: none;
+  }
+}
+.best__username{
+  color: #2f3234;
+  font-family: Lifehack;
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+	margin: 20px;	
+}
+.best__desk{
+  font-size: 0.875rem;
+  line-height: 1.8;
+  opacity: 0.8;
+  color: #2f3234;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  margin: 20px;
+  
+  @include phones{
+    text-align: left;
+    display: block;
+    width: 65%;
+  }
+}
+.best__desc-text{
+  font-size: 0.875rem;
+  line-height: 1.8;
+  opacity: 0.8;
+  color: #2f3234;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+	margin: 20px;
+}
