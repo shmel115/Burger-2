@@ -71,10 +71,10 @@
 .best__username{
   color: #2f3234;
   font-family: Lifehack;
-  font-size: rem(24px);
+  font-size: 24px;
   font-weight: 500;
   font-style: normal;
-	margin: rem(20px);	
+	margin: 20px;	
 }
 .best__desk{
   font-size: 0.875rem;
@@ -82,10 +82,10 @@
   opacity: 0.8;
   color: #2f3234;
   font-family: Ubuntu;
-  font-size: rem(13px);
+  font-size: 13px;
   font-weight: 500;
   font-style: normal;
-  margin: rem(20px);
+  margin: 20px;
   
   @include phones{
     text-align: left;
@@ -99,8 +99,8 @@
   opacity: 0.8;
   color: #2f3234;
   font-family: Ubuntu;
-  font-size: rem(13px);
+  font-size: 13px;
   font-weight: 500;
   font-style: normal;
-	margin: rem(20px);
+	margin: 20px;
 }

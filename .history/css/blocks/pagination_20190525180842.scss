@@ -16,13 +16,13 @@
   display: block;
 }
 .pagination__pages-item.active .pagination__link:before{
-  width: rem(14px);
-  height: rem(14px);
+  width: 14px;
+  height: 14px;
   opacity: 1;
 }
 .pagination__link:before{
-  width: 0;
-  height: 0;
+  width: 0px;
+  height: 0px;
   border-radius: 50%;
   border: 1px solid #fff;
   opacity: 0;
@@ -48,11 +48,11 @@
 
 .pagination__pages-item{
   display: block;
-  width: rem(6px);
-  height: rem(6px);
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background-color: #ffffff;
-  margin: rem(15px);
+  margin: 15px;
   position: relative;
 }
 .pagination__pages-item:before{
@@ -62,13 +62,13 @@
   align-items: center;
 }
 .pagination__down{
-  width: rem(29px);
-  height: rem(14px);
+  width: 29px;
+  height: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: transparent;
   border: 0;
-  margin-bottom: rem(30px);
+  margin-bottom: 30px;
   transition: 300ms;
 }

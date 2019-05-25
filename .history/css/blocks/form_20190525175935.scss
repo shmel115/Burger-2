@@ -80,7 +80,7 @@
 }
 .form__label{
   color: #fff;
-  margin-bottom: rem(10px);
+  margin-bottom: 10px;
   font-size: 0.875rem;
 }
 .form__input{
@@ -90,7 +90,7 @@
   padding: 0.3125rem 0.625rem;
 }
 .form__input-textarea{
-  height: rem(110px);
+  height: 110px;
   resize: none;
 }
 .form__radio{
@@ -101,8 +101,8 @@
 .form__radio-elem, .form__checkbox-elem {
   position: absolute;
   clip: rect(0 0 0 0);
-  width: rem(1px);
-  height: rem(1px);
+  width: 1px;
+  height: 1px;
   overflow: hidden;
 }
 .form__radio-fake{
@@ -149,8 +149,8 @@
   content: "";
   background: url(../../images/mark.png) 50% no-repeat transparent;
   background-size: contain;
-  width: rem(11px);
-  height: rem(9px);
+  width: 11px;
+  height: 9px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -162,21 +162,21 @@
   margin-left: 0.625rem;
 }
 .form__button {
-  margin-right: rem(20px);
+  margin-right: 20px;
   border: 0;
   background: #e35028;
-  font-size: rem(13px);
+  font-size: 13px;
   text-transform: uppercase;
-  border-radius: rem(5px);
+  border-radius: 5px;
   color: #ffffff;
   font-family: ubuntu, Verdana, Arial, sans-serif;
   font-weight: middle;
   font-style: normal;
-  padding: rem(10px) rem(15px);
+  padding: 10px 15px;
   cursor: pointer;
 
   @include phones {
-    margin-left: rem(10px);
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
