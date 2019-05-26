@@ -14,7 +14,7 @@
     padding-top: 3.125rem;
   }
   @include tablets{
-    margin-bottom: 2.5rem;
+    
   }
 }
 .best__list{
@@ -60,7 +60,7 @@
   margin: rem(20px);
   
   @include phones{
-    margin-bottom: 0;
+    margin-bottom: 0px;
     margin-right: 1.25rem;
     width: 30%;
   }
