@@ -1,0 +1,18 @@
+.burger{
+  background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
+  align-items: center;
+  justify-content: center;
+}
+.slider-wrap{
+  position: relative;
+}
+.slider__button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  z-index: 20;
+}
+.slider__button-next{
+  right: -2.5rem;
+}
