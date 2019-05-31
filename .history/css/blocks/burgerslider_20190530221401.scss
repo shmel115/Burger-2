@@ -112,9 +112,8 @@ svg:not(:root) {
   display: flex;
   justify-content: center;
 }
-
-.slider__right {
-  width: 60%;
+.slider__left, .slider__right {
+  flex: 1;
 }
 .owl-carousel .owl-item img {
   display: block;

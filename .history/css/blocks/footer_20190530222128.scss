@@ -11,9 +11,8 @@
 }
 .footer__container{
   display: flex;
-  flex-direction: unset;
+  flex-direction: row;
   align-items: center;
-
 
   @include phones{
     flex-direction: column;

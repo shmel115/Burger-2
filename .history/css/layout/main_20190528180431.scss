@@ -14,7 +14,7 @@ html, body{
 	height: 100%; 
 	overflow: visible;
   margin: 0;
-  
+  background:url(../../images/texture.png) center center / cover no-repeat;
 }
 body{
 	margin: 0;
@@ -81,9 +81,6 @@ textarea{
 svg:not(:root) {
   overflow: hidden;
 }
-:not(svg) {
-  transform-origin: 0px 0px;
-}
 .block {
  display: flex;
  justify-content: space-around; 
@@ -97,7 +94,6 @@ svg:not(:root) {
 	justify-content: space-between;
 	text-decoration: none;
   text-align: center;
-  background:url(../../images/texture.png) center center / cover no-repeat;
 }
 .main__container{
   display: flex;

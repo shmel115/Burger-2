@@ -1,4 +1,4 @@
-.block{
+.burgermenu{
   height: 100vh;
   min-height:rem(650px);
   position: relative;
@@ -7,7 +7,7 @@
   background-image: url(../images/menu.png);
   background-size: cover;
 }
-.block__title{
+.burgermenu__title{
   position: absolute;
   top: rem(110px);
   left: rem(90px);
@@ -19,7 +19,7 @@
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
-.block-list{
+.burgermenu-accordeon{
   position: absolute;
   display: flex;
   right: 0;
@@ -46,7 +46,7 @@
   cursor: pointer;
   margin: 0;
   ///
-  /*width: 5rem;
+  width: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +54,7 @@
   float: left;  
   background: center center / cover no-repeat;
   text-decoration: none;
-  position: relative; */ 
+  position: relative;  
 }
 
 .block-list__desc{

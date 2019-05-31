@@ -14,7 +14,7 @@ html, body{
 	height: 100%; 
 	overflow: visible;
   margin: 0;
-  
+  background:url(../../images/texture.png) center center / cover no-repeat;
 }
 body{
 	margin: 0;
@@ -97,7 +97,6 @@ svg:not(:root) {
 	justify-content: space-between;
 	text-decoration: none;
   text-align: center;
-  background:url(../../images/texture.png) center center / cover no-repeat;
 }
 .main__container{
   display: flex;

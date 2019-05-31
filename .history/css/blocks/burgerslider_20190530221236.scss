@@ -96,7 +96,7 @@ svg:not(:root) {
 }
 .burger-weight {
   display: flex;
-
+  
 }
 .burger-weight__measure {
   background: url(images/kkal.png) 50% no-repeat;
@@ -106,15 +106,13 @@ svg:not(:root) {
   background-size: contain;
 }
 .slider__left {
-  widows: 40%;
   text-align: center;
   align-items: flex-end;
   display: flex;
   justify-content: center;
 }
-
-.slider__right {
-  width: 60%;
+.slider__left, .slider__right {
+  flex: 1;
 }
 .owl-carousel .owl-item img {
   display: block;
