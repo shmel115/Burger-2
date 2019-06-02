@@ -1347,6 +1347,19 @@ svg:not(:root) {
 .slider-wrap {
   position: relative; }
 
+.slider__options {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end; }
+
+.slider__text {
+  color: white;
+  margin-bottom: 1.875rem; }
+
+.text-block p {
+  font-size: 0.875rem;
+  line-height: 1.8; }
+
 .slider__button {
   position: absolute;
   top: 50%;
@@ -1506,6 +1519,8 @@ img {
   line-height: 1; }
 
 .btn {
+  width: 6.92857rem;
+  height: 2.5rem;
   display: inline-block;
   vertical-align: top;
   background: #e45028;
