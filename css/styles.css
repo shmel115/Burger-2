@@ -505,7 +505,7 @@ svg:not(:root) {
   flex: 1 0 auto; }
 
 .name {
-  padding-top: 9rem; }
+  padding-top: 7rem; }
   @media screen and (max-width: 768px) {
     .name {
       padding-top: 0;
@@ -517,7 +517,7 @@ svg:not(:root) {
 .name__first {
   color: #f9b43b;
   font-family: Gagalin;
-  font-size: 5.14286rem;
+  font-size: 4.5rem;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
@@ -713,16 +713,13 @@ svg:not(:root) {
   text-align: center;
   overflow: visible;
   margin: 0;
-  background: url(../images/bg.png) center center/cover no-repeat; }
+  background: url(../../images/bg.png) center center/cover no-repeat; }
   @media screen and (max-width: 480px) {
     .best {
-      background: url(../images/bg.png) no-repeat;
+      background: url(../../images/bg.png) no-repeat;
       background-size: cover;
       align-items: flex-start;
       padding-top: 3.125rem; } }
-  @media screen and (max-width: 768px) {
-    .best {
-      margin-bottom: 2.5rem; } }
 
 .best__list {
   display: flex; }
@@ -761,12 +758,11 @@ svg:not(:root) {
   overflow: hidden;
   width: 6.92857rem;
   height: 6.35714rem;
-  flex-shrink: 0;
-  margin: 1.42857rem; }
+  flex-shrink: 0; }
   @media screen and (max-width: 480px) {
     .best__avatar {
       margin-bottom: 0;
-      margin-right: 1.25rem;
+      margin-right: 0.5rem;
       width: 30%; } }
 
 @media screen and (max-width: 480px) {
@@ -777,10 +773,9 @@ svg:not(:root) {
 .best__username {
   color: #2f3234;
   font-family: Lifehack;
-  font-size: 1.71429rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  font-style: normal;
-  margin: 1.42857rem; }
+  font-style: normal; }
 
 .best__desk {
   font-size: 0.875rem;
@@ -788,15 +783,14 @@ svg:not(:root) {
   opacity: 0.8;
   color: #2f3234;
   font-family: Ubuntu;
-  font-size: 0.92857rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  font-style: normal;
-  margin: 1.42857rem; }
+  font-style: normal; }
   @media screen and (max-width: 480px) {
     .best__desk {
       text-align: left;
       display: block;
-      width: 65%; } }
+      width: 100%; } }
 
 .best__desc-text {
   font-size: 0.875rem;
@@ -1173,12 +1167,11 @@ svg:not(:root) {
       padding: 0 15%; } }
   @media screen and (max-width: 480px) {
     .main-form {
-      padding: 0; } }
+      padding: 2rem; } }
 
 .form__col {
-  width: 50%;
-  float: left;
-  margin-right: 1.25rem; }
+  width: 100%;
+  float: left; }
   .form__col:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
@@ -1195,12 +1188,11 @@ svg:not(:root) {
   margin-bottom: 1.25rem; }
   @media screen and (max-width: 768px) {
     .form__row {
-      margin-left: 0;
       width: 100%; } }
 
 .form__block {
   margin-right: 1.25rem;
-  flex: 1; }
+  width: 100%; }
   .form__block:last-child {
     margin-right: 0; }
 
@@ -1212,8 +1204,7 @@ svg:not(:root) {
 .form__input {
   border: 1px solid transparent;
   border-radius: 0.3125rem;
-  width: 100%;
-  padding: 0.3125rem 0.625rem; }
+  width: 100%; }
 
 .form__input-textarea {
   height: 7.85714rem;

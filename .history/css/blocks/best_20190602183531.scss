@@ -13,6 +13,9 @@
     align-items: flex-start;
     padding-top: 3.125rem;
   }
+  @include tablets{
+    margin-bottom: 2.5rem;
+  }
 }
 .best__list{
   display: flex;
@@ -87,7 +90,7 @@
   @include phones{
     text-align: left;
     display: block;
-    width: 100%;
+    width: 65%;
   }
 }
 .best__desc-text{

@@ -13,6 +13,9 @@
     align-items: flex-start;
     padding-top: 3.125rem;
   }
+  @include tablets{
+    margin-bottom: 2.5rem;
+  }
 }
 .best__list{
   display: flex;
@@ -54,10 +57,11 @@
 	width: rem(97px);
   height: rem(89px);
 	flex-shrink: 0;
+  margin: rem(20px);
   
   @include phones{
     margin-bottom: 0;
-    margin-right: 0.5rem;
+    margin-right: 1.25rem;
     width: 30%;
   }
 }
@@ -80,14 +84,14 @@
   opacity: 0.8;
   color: #2f3234;
   font-family: Ubuntu;
-  font-size: 0.8rem;
+  font-size: rem(13px);
   font-weight: 500;
   font-style: normal;
   
   @include phones{
     text-align: left;
     display: block;
-    width: 100%;
+    width: 65%;
   }
 }
 .best__desc-text{

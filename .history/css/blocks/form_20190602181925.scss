@@ -40,12 +40,13 @@
   }
 
   @include phones{
-    padding: 2rem;
+    padding: 0;
   }
 }
 .form__col{
   width: 100%;
   float: left;
+  margin-right: 1.25rem;
 
   &:last-child{
     margin-right: 0;

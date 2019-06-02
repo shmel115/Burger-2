@@ -31,4 +31,3 @@ const blockList = document.querySelector('.block-list')
                   }
           
               })
-            }
