@@ -1,4 +1,4 @@
-window.onload = function(){
+/*window.onload = function(){
 const blockList = document.querySelector('.block-list')
           
               blockList.addEventListener('click', function (e) {
@@ -33,6 +33,5 @@ const blockList = document.querySelector('.block-list')
                   }
           
               })
-            }
+            }*/
 
-            

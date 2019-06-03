@@ -425,12 +425,6 @@ textarea {
     .section {
       min-height: initial; } }
 
-svg:not(:root) {
-  overflow: hidden; }
-
-:not(svg) {
-  transform-origin: 0px 0px; }
-
 .block {
   display: flex;
   justify-content: space-around; }
@@ -1424,12 +1418,6 @@ svg:not(:root) {
   height: 60%;
   fill: #fff; }
 
-svg:not(:root) {
-  overflow: hidden; }
-
-:not(svg) {
-  transform-origin: 0px 0px; }
-
 .ingredients__icon-text {
   color: white;
   font-size: 0.875rem;
@@ -1440,10 +1428,13 @@ svg:not(:root) {
   text-align: center; }
 
 .burger-weight {
-  display: flex; }
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  opacity: 0.5; }
 
-.burger-weight__measure {
-  background: url(images/kkal.png) 50% no-repeat;
+.burger-weight {
+  background: url(images/weight.png) 50% no-repeat;
   width: 4.0625rem;
   height: 3.75rem;
   position: relative;

@@ -93,6 +93,12 @@
   height: 60%;
   fill: #fff;
 }
+svg:not(:root) {
+  overflow: hidden;
+}
+:not(svg) {
+  transform-origin: 0px 0px;
+}
 .ingredients__icon-text {
   color: white;
   font-size: 0.875rem;

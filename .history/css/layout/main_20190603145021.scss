@@ -78,6 +78,9 @@ textarea{
     min-height: initial;
   }
 }
+svg:not(:root) {
+  overflow: hidden;
+}
 .block {
  display: flex;
  justify-content: space-around; 

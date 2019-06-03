@@ -93,6 +93,12 @@
   height: 60%;
   fill: #fff;
 }
+svg:not(:root) {
+  overflow: hidden;
+}
+:not(svg) {
+  transform-origin: 0px 0px;
+}
 .ingredients__icon-text {
   color: white;
   font-size: 0.875rem;
@@ -103,13 +109,10 @@
   text-align: center;
 }
 .burger-weight {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  opacity: 0.5;
+  display: flex;
 
 }
-.burger-weight {
+.burger-weight__measure {
   background: url(images/weight.png) 50% no-repeat;
   width: 4.0625rem;
   height: 3.75rem;
