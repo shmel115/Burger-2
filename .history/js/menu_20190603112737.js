@@ -28,7 +28,6 @@ const blockList = document.querySelector('.block-list')
                           e.target.nextElementSibling.style.width = `${window.innerWidth - 57}px`;
                       } else {
                           blockList.style.transform = 'translateX(0)'
-                
                       }
                   }
           

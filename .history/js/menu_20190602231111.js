@@ -2,7 +2,6 @@ window.onload = function(){
 const blockList = document.querySelector('.block-list')
           
               blockList.addEventListener('click', function (e) {
-                e.preventDefault()
                   if (e.target.className === 'block-list__title') {
                       e.target.parentElement.classList.toggle('active')
                       const itenId = localStorage.getItem('itenId')
@@ -28,7 +27,6 @@ const blockList = document.querySelector('.block-list')
                           e.target.nextElementSibling.style.width = `${window.innerWidth - 57}px`;
                       } else {
                           blockList.style.transform = 'translateX(0)'
-                
                       }
                   }
           
