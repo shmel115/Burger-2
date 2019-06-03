@@ -34,6 +34,9 @@
 .block-list__item.active {
   width: auto;
 }
+.list-item_1{
+  
+}
 .block-list__title {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
@@ -62,6 +65,6 @@
   font-size: 0.875rem;
   color: #fff;
   padding: 3.75rem 1.875rem;
-  width: 25rem;
+  width: 0;
   line-height: 1.8;
 }

@@ -386,6 +386,13 @@ a {
   text-decoration: none;
   background-color: transparent; }
 
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; }
+
 button {
   cursor: pointer; }
 
@@ -1078,7 +1085,7 @@ textarea {
 .block-list__title {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  background-color: #393838;
+  background: url(../images/formeateat.png);
   padding: 2rem 1rem;
   color: #fff;
   font-weight: 700;
@@ -1086,15 +1093,13 @@ textarea {
   text-transform: uppercase;
   cursor: pointer;
   margin: 0;
-  /*width: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  float: left;  
-  background: center center / cover no-repeat;
-  text-decoration: none;
-  position: relative; */ }
+  font-size: 2rem;
+  color: #fff;
+  font-family: gagalin;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  white-space: nowrap; }
 
 .block-list__desc {
   font-family: ubuntu;
@@ -1103,7 +1108,7 @@ textarea {
   font-size: 0.875rem;
   color: #fff;
   padding: 3.75rem 1.875rem;
-  width: 0;
+  width: 25rem;
   line-height: 1.8; }
 
 .section {

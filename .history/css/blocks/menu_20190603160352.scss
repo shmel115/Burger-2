@@ -37,7 +37,7 @@
 .block-list__title {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  background: url(../images/formeateat.png);
+  background-color: rgb(57, 56, 56);
   padding: 2rem 1rem;
   color: #fff;
   font-weight: 700;
@@ -46,13 +46,14 @@
   cursor: pointer;
   margin: 0;
 
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #fff;
-  font-family: gagalin;
+  font-family: gagalin, cursive;
   font-weight: normal;
   font-style: normal;
   text-transform: uppercase;
-  white-space: nowrap;  
+  white-space: nowrap;
+  
 }
 
 .block-list__desc{
@@ -62,6 +63,6 @@
   font-size: 0.875rem;
   color: #fff;
   padding: 3.75rem 1.875rem;
-  width: 25rem;
+  width: 0;
   line-height: 1.8;
 }
