@@ -127,10 +127,6 @@
   @include tablets{
     top: 0;
   }
-  @include phones{
-    position: static;
-    margin-top: -4.625rem;
-  }
 }
 .ingredients__icon {
   height: 60%;
@@ -182,10 +178,6 @@
 
   @include tablets{
     padding: 0 13%;
-  }
-
-  @include phones{
-    padding: 0 5%;
   }
 }
 .slider__left, .slider__right{

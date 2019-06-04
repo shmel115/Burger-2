@@ -43,13 +43,6 @@
 }
 .slider__button-prev{
   left: -2.5rem;
-
-  @include tablets{
-    right: -0.625rem;
-  }
-  @include phones{
-    right: -0.625rem;
-  }
 }
 .no-js .owl-carousel, .owl-carousel.owl-loaded {
   display: block;
@@ -106,9 +99,6 @@
     padding-top: 4.6875rem;
     flex-direction: column;
   }
-  @include phones{
-    position: relative;
-  }
 }
 .ingredients {
   position: absolute;
@@ -126,10 +116,6 @@
 
   @include tablets{
     top: 0;
-  }
-  @include phones{
-    position: static;
-    margin-top: -4.625rem;
   }
 }
 .ingredients__icon {
@@ -182,10 +168,6 @@
 
   @include tablets{
     padding: 0 13%;
-  }
-
-  @include phones{
-    padding: 0 5%;
   }
 }
 .slider__left, .slider__right{
