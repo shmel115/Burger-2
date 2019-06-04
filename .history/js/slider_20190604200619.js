@@ -16,10 +16,4 @@ right.addEventListener("click", function() {
   }
 });
 
-left.addEventListener("click", function() {
-  if (currentRight > minRight) {
-    currentRight -= step;
-    items.style.right = currentRight + "rem";
-  }
-});
 }

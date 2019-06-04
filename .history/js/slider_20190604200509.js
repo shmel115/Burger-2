@@ -12,14 +12,7 @@ items.style.right = currentRight;
 right.addEventListener("click", function() {
   if(currentRight < maxRight) {
     currentRight += step;
-    items.style.right = currentRight + "rem";
   }
-});
+}
 
-left.addEventListener("click", function() {
-  if (currentRight > minRight) {
-    currentRight -= step;
-    items.style.right = currentRight + "rem";
-  }
-});
 }
