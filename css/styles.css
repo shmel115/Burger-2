@@ -1085,7 +1085,6 @@ textarea {
 .block-list__title {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  background: url(../images/formeateat.png);
   padding: 2rem 1rem;
   color: #fff;
   font-weight: 700;
@@ -1105,11 +1104,16 @@ textarea {
   font-family: ubuntu;
   font-weight: 300;
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   color: #fff;
   padding: 3.75rem 1.875rem;
   width: 25rem;
-  line-height: 1.8; }
+  line-height: 1.8;
+  background: rgba(47, 50, 52, 0.93);
+  background-size: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden; }
 
 .section {
   height: 100vh;
