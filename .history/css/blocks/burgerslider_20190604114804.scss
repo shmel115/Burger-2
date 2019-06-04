@@ -10,10 +10,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-
-  @include tablets{
-    justify-content: center;
-  }
 }
 
 .slider__text {
@@ -210,10 +206,6 @@ img {
 }
 .slider__price-amount {
   font-size: 4.5rem;
-
-  @include tablets{
-    font-size: 3.125rem;
-  }
 }
 .slider__price-amount, .slider__price-measure {
   line-height: 1;

@@ -10,10 +10,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-
-  @include tablets{
-    justify-content: center;
-  }
 }
 
 .slider__text {
@@ -163,8 +159,7 @@
 }
 .slider__left .section__title, .slider__right .section__title{
   @include tablets{
-    font-size: 3.125rem;
-  }
+    
 }
 .owl-carousel .owl-item img {
   display: block;
@@ -210,10 +205,6 @@ img {
 }
 .slider__price-amount {
   font-size: 4.5rem;
-
-  @include tablets{
-    font-size: 3.125rem;
-  }
 }
 .slider__price-amount, .slider__price-measure {
   line-height: 1;

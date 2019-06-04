@@ -428,6 +428,9 @@ textarea {
   position: relative;
   display: flex;
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .section {
+      min-height: initial; } }
   @media screen and (max-width: 480px) {
     .section {
       min-height: initial; } }
@@ -1345,6 +1348,9 @@ textarea {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end; }
+  @media screen and (max-width: 768px) {
+    .slider__options {
+      justify-content: center; } }
 
 .slider__text {
   color: white;
@@ -1408,6 +1414,11 @@ textarea {
   position: relative;
   padding-bottom: 5.3125rem;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .slider__item {
+      padding: 0;
+      padding-top: 4.6875rem;
+      flex-direction: column; } }
 
 .ingredients {
   position: absolute;
@@ -1422,6 +1433,9 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .ingredients {
+      top: 0; } }
 
 .ingredients__icon {
   height: 60%;
@@ -1441,6 +1455,12 @@ textarea {
   bottom: 0px;
   left: 0;
   opacity: 0.5; }
+  @media screen and (max-width: 768px) {
+    .burger-weight {
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: auto; } }
 
 .burger-weight {
   background: url(images/weight.png) 50% no-repeat;
@@ -1455,9 +1475,24 @@ textarea {
   align-items: flex-end;
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .slider__left {
+      padding-top: 0; } }
 
 .slider__right {
   width: 60%; }
+  @media screen and (max-width: 768px) {
+    .slider__right {
+      padding: 0 13%; } }
+
+@media screen and (max-width: 768px) {
+  .slider__left, .slider__right {
+    width: 100%;
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .slider__left .section__title, .slider__right .section__title {
+    font-size: 3.125rem; } }
 
 .owl-carousel .owl-item img {
   display: block;
@@ -1466,6 +1501,9 @@ textarea {
 
 .slider__pic {
   max-width: 98%; }
+  @media screen and (max-width: 768px) {
+    .slider__pic {
+      max-width: 65%; } }
 
 img {
   border-style: none; }
@@ -1499,6 +1537,9 @@ img {
 
 .slider__price-amount {
   font-size: 4.5rem; }
+  @media screen and (max-width: 768px) {
+    .slider__price-amount {
+      font-size: 3.125rem; } }
 
 .slider__price-amount, .slider__price-measure {
   line-height: 1; }
