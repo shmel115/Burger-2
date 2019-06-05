@@ -56,39 +56,5 @@
 }
 .nav_hamburger {
   width: auto;
-
-  @include tablets {
-    display: block;
-  }
-}
-.nav {
-  display: inline-block;
-  vertical-align: middle;
-
-  @include tablets {
-    display: none;
-  }
-}
-.nav_hamburger .nav__list {
-  flex-direction: column;
-}
-.nav__list {
-  width: 100%;
-
-  @include tablets {
-    text-align: center;
-  }
-}
-.nav_hamburger .nav__item {
-  display: inline;
-  text-align: center;
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-.nav__item {
-  white-space: nowrap;
-  vertical-align: middle;
-}
-.nav_hamburger .nav__link {
-  font-size: 1.5625rem;
+  
 }

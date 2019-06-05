@@ -87,8 +87,20 @@
 }
 .nav__item {
   white-space: nowrap;
+  display: inline-block;
   vertical-align: middle;
 }
 .nav_hamburger .nav__link {
   font-size: 1.5625rem;
+}
+.nav__link {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-family: ubuntu, Verdana, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }

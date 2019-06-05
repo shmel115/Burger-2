@@ -609,7 +609,6 @@ textarea {
   align-items: center; }
 
 .nav__item {
-  overflow: hidden;
   display: flex;
   align-items: center; }
   .nav__item:last-child {
@@ -631,7 +630,7 @@ textarea {
   display: inline-block;
   color: #ffffff;
   font-family: Ubuntu;
-  font-size: 0.92857rem;
+  font-size: 0.8rem;
   font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
@@ -1319,13 +1318,24 @@ textarea {
   display: none; }
   @media screen and (max-width: 768px) {
     .hamburger-menu-link {
-      display: flex; } }
+      display: flex;
+      position: fixed;
+      top: 2.2rem;
+      right: 2.2rem;
+      z-index: 2; } }
+  @media screen and (max-width: 480px) {
+    .hamburger-menu-link {
+      top: 2.4rem;
+      right: 1.2rem; } }
 
 .hamburger-menu-link__bars, .hamburger-menu-link__bars:before, .hamburger-menu-link__bars:after {
   background: #fff;
   width: 1.71429rem;
   height: 0.35714rem;
-  border-radius: 0.21429rem; }
+  border-radius: 0.21429rem;
+  z-index: 100;
+  cursor: pointer;
+  transition: transform 0.25s ease; }
 
 .hamburger-menu-link__bars:before, .hamburger-menu-link__bars:after {
   content: "";
@@ -1337,6 +1347,52 @@ textarea {
 
 .hamburger-menu-link__bars:after {
   bottom: 0; }
+
+.hamburger-menu {
+  position: absolute;
+  left: -99999px;
+  right: 0;
+  background: rgba(47, 50, 52, 0.95);
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 10;
+  transition: opacity .3s; }
+
+.nav_hamburger {
+  width: auto; }
+  @media screen and (max-width: 768px) {
+    .nav_hamburger {
+      display: block; } }
+
+.nav {
+  display: inline-block;
+  vertical-align: middle; }
+  @media screen and (max-width: 768px) {
+    .nav {
+      display: none; } }
+
+.nav_hamburger .nav__list {
+  flex-direction: column; }
+
+.nav__list {
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .nav__list {
+      text-align: center; } }
+
+.nav_hamburger .nav__item {
+  display: inline;
+  text-align: center;
+  opacity: 0;
+  animation-fill-mode: forwards; }
+
+.nav__item {
+  white-space: nowrap;
+  vertical-align: middle; }
+
+.nav_hamburger .nav__link {
+  font-size: 1.5625rem; }
 
 .burger {
   background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
