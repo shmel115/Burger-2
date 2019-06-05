@@ -49,26 +49,11 @@ button.addEventListener('click', function(event) {
 });
 button.addEventListener('click', event => {
     event.preventDefault();
-    let formdata = new FormData(button)
-    fetch('https://webdev-api.loftschool.com/sendmail', {
-        method: 'POST',
-        body: formdata
-    }).then (data => data.json())
-    .then(json => {
-      div.innerHTML = json.message
-    })
 
 if (validateForm(myForm)) {
-    const data = {
-        name:myForm.elements.name.value,
-        phone:myForm.elements.phone.value,
-        comment:myForm.elements.comment.value,
-    };
-
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-    xhr.send(JSON.stringify(data));
-    }
+    xhr.open('POST');
+}
 });
 
 function validateForm(form) {
@@ -80,7 +65,19 @@ function validateForm(form) {
     if (!validateField(form.elements.phone)) {
         valid = false;
     }
-    if (!validateField(form.elements.comment)) {
+    if (!validateField(form.elements.street)) {
+        valid = false;
+    }
+    if (!validateField(form.elements.home)) {
+        valid = false;
+    }
+    if (!validateField(form.elements.part)) {
+        valid = false;
+    }
+    if (!validateField(form.elements.appt)) {
+        valid = false;
+    }
+    if (!validateField(form.elements.floor)) {
         valid = false;
     }
     return valid;
@@ -89,34 +86,8 @@ function validateField(field) {
         field.nextElementSibling.textContent = field.validationMessage;
         return field.checkValidity();
     }
-
-var slides = document.getElementsByClassName("item"),
-prev = document.querySelector(".prev"),
-next = document.querySelector(".next");
-var slideIndex = 1; 
-showElem(slideIndex);
-prev.addEventListener('click', (e) => {
-  e.preventDefault()
-  showElem(slideIndex -=1)
-})
-next.addEventListener('click', (e) => {
-  e.preventDefault()
-  showElem(slideIndex += 1)
-})
-
-function showElem(n) {
-  var i;
-  if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";   
-    
-  }
 }
+            }
+
+
             

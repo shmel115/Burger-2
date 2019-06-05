@@ -33,6 +33,29 @@ const blockList = document.querySelector('.block-list')
                   }
           
               })
+
+              let owlCarousel = () => {
+                const burgerCarousel = $(".slider__list").owlCarousel({
+                  items: 1,
+                  nav: true,
+                  navContainer: $(".slider__controls"),
+                  navText: ["", ""],
+                  loop: true
+                });
+            
+                $(".slider__btn_next").on("click", e => {
+                  e.preventDefault();
+                  burgerCarousel.trigger("next.owl.carousel");
+                });
+            
+                $(".slider__btn_prev").on("click", e => {
+                  e.preventDefault();
+                  burgerCarousel.trigger("prev.owl.carousel");
+                });
+              };
+            
+              owlCarousel();
+              
 const myForm = document.querySelector('#myForm');
 const button = document.querySelector('#button');  
 

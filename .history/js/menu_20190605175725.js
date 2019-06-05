@@ -89,7 +89,7 @@ function validateField(field) {
         field.nextElementSibling.textContent = field.validationMessage;
         return field.checkValidity();
     }
-
+}
 var slides = document.getElementsByClassName("item"),
 prev = document.querySelector(".prev"),
 next = document.querySelector(".next");
@@ -118,5 +118,5 @@ function showElem(n) {
     slides[slideIndex - 1].style.display = "block";   
     
   }
-}
+
             
