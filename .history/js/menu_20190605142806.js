@@ -34,25 +34,7 @@ const blockList = document.querySelector('.block-list')
           
               })
 const myForm = document.querySelector('#myForm');
-const button = document.querySelector('#button');  
-
-button.addEventListener('click', function(event) {
-    event.preventDefault();
-
-    console.log(myForm.elements.name.value);
-    console.log(myForm.elements.phone.value);
-    console.log(myForm.elements.street.value);
-    console.log(myForm.elements.home.value);
-    console.log(myForm.elements.part.value);
-    console.log(myForm.elements.appt.value);
-    console.log(myForm.elements.floor.value);
-    console.log(myForm.elements.comment.value);
-    
-    if (myForm.elements.callback.checked == true) {
-        console.log('Не перезванивать');
-    }
-
-});
+const button =              
             }
 
 

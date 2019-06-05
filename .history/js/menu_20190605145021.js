@@ -47,7 +47,8 @@ button.addEventListener('click', function(event) {
     console.log(myForm.elements.appt.value);
     console.log(myForm.elements.floor.value);
     console.log(myForm.elements.comment.value);
-    
+    console.log(myForm.elements.payment.checked);
+
     if (myForm.elements.callback.checked == true) {
         console.log('Не перезванивать');
     }
