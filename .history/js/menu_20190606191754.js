@@ -34,6 +34,46 @@ const blockList = document.querySelector('.block-list')
           
               })
 
+              /*const element = document.querySelector("#accordeon");
+
+createAccordeon(element);
+
+function createAccordeon(element, config) {
+  let lastActive;
+
+  element.classList.add(".team-accordeon__item");
+  element.addEventListener("click", function(e) {
+    if (e.target.classList.contains(".team-accordeon__link")) {
+      if (lastActive) {
+        lastActive.classList.remove("active");
+      }
+
+      lastActive = e.target.parentNode;
+      lastActive.classList.add("active");
+    }
+  });
+
+  if (!config) {
+    return;
+  }
+
+  for (let i = 0; i < config.items.length; i++) {
+    const item = config.items[i];
+    const itemElement = document.createElement("div");
+    const titleElement = document.createElement("div");
+    const contentElement = document.createElement("div");
+
+    titleElement.classList.add(".team-accordeon__link");
+    titleElement.textContent = item.title;
+    contentElement.classList.add(".team-accordeon__about");
+    contentElement.innerHTML = item.content;
+
+    itemElement.appendChild(titleElement);
+    itemElement.appendChild(contentElement);
+
+    element.appendChild(itemElement);
+  }
+}*/
 let teamAcco = () => {
     $(".team-accordeon__link").on("click", e => {
       e.preventDefault();
@@ -42,8 +82,8 @@ let teamAcco = () => {
       const item = $this.closest(".team-accordeon__item");
       const container = $this.closest(".team-accordeon");
       const items = $(".team-accordeon__item", container);
-      const content = item.find(".team-accordeon__about");
-      const otherContent = $(".team-accordeon__about", container);
+      const content = item.find(".team-accordeon__details");
+      const otherContent = $(".team-accordion__about", container);
 
       if (!item.hasClass("is-active")) {
         items.removeClass("is-active");

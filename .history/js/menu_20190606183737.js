@@ -34,30 +34,30 @@ const blockList = document.querySelector('.block-list')
           
               })
 
-let teamAcco = () => {
-    $(".team-accordeon__link").on("click", e => {
-      e.preventDefault();
-
-      const $this = $(e.target);
-      const item = $this.closest(".team-accordeon__item");
-      const container = $this.closest(".team-accordeon");
-      const items = $(".team-accordeon__item", container);
-      const content = item.find(".team-accordeon__about");
-      const otherContent = $(".team-accordeon__about", container);
-
-      if (!item.hasClass("is-active")) {
-        items.removeClass("is-active");
-        item.addClass("is-active");
-        otherContent.stop(true).slideUp();
-        content.stop(true).slideDown();
-      } else {
-        item.removeClass("is-active");
-        content.stop(true).slideUp();
-      }
-    });
-  };
-
-  teamAcco();
+              let teamAcco = () => {
+                $(".team-accordeon__link").on("click", e => {
+                  e.preventDefault();
+            
+                  const $this = $(e.target);
+                  const item = $this.closest(".team-accordeon__item");
+                  const container = $this.closest(".team-accordeon");
+                  const items = $(".team-accordeon__item", container);
+                  const content = item.find(".team-accordeon__details");
+                  const otherContent = $(".team-accordeon__about", container);
+            
+                  if (!item.hasClass("is-active")) {
+                    items.removeClass("is-active");
+                    item.addClass("is-active");
+                    otherContent.stop(true).slideUp();
+                    content.stop(true).slideDown();
+                  } else {
+                    item.removeClass("is-active");
+                    content.stop(true).slideUp();
+                  }
+                });
+              };
+            
+              teamAcco();
 
 const myForm = document.querySelector('#myForm');
 const button = document.querySelector('#button');  

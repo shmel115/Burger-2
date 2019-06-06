@@ -5,6 +5,7 @@
 }
 .slider-wrap{
   position: relative;
+  overflow: hidden;
 }
 .slider__options{
   display: flex;
@@ -111,7 +112,11 @@
   }
 }
 .slider__list{
-  
+  white-space: nowrap;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .ingredients {
   position: absolute;

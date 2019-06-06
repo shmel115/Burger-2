@@ -34,30 +34,46 @@ const blockList = document.querySelector('.block-list')
           
               })
 
-let teamAcco = () => {
-    $(".team-accordeon__link").on("click", e => {
-      e.preventDefault();
+const element = document.querySelector("#team-accordeon__item");
 
-      const $this = $(e.target);
-      const item = $this.closest(".team-accordeon__item");
-      const container = $this.closest(".team-accordeon");
-      const items = $(".team-accordeon__item", container);
-      const content = item.find(".team-accordeon__about");
-      const otherContent = $(".team-accordeon__about", container);
+createAccordeon(element);
 
-      if (!item.hasClass("is-active")) {
-        items.removeClass("is-active");
-        item.addClass("is-active");
-        otherContent.stop(true).slideUp();
-        content.stop(true).slideDown();
-      } else {
-        item.removeClass("is-active");
-        content.stop(true).slideUp();
+function createAccordeon(element, config) {
+  let lastActive;
+
+  element.classList.add("team-accordeon__item");
+  element.addEventListener("click", function(e) {
+    if (e.target.classList.contains("team-accordeon__link")) {
+      if (lastActive) {
+        lastActive.classList.remove("active");
       }
-    });
-  };
 
-  teamAcco();
+      lastActive = e.target.parentNode;
+      lastActive.classList.add("active");
+    }
+  });
+
+  if (!config) {
+    return;
+  }
+
+  for (let i = 0; i < config.items.length; i++) {
+    const item = config.items[i];
+    const itemElement = document.createElement("div");
+    const titleElement = document.createElement("div");
+    const contentElement = document.createElement("div");
+
+    titleElement.classList.add("team-accordeon__link");
+    titleElement.textContent = item.title;
+    contentElement.classList.add("team-accordeon__about");
+    contentElement.innerHTML = item.content;
+
+    itemElement.appendChild(titleElement);
+    itemElement.appendChild(contentElement);
+
+    element.appendChild(itemElement);
+  }
+}
 
 const myForm = document.querySelector('#myForm');
 const button = document.querySelector('#button');  

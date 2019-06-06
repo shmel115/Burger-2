@@ -1491,7 +1491,7 @@ textarea {
 .slider__item {
   position: relative;
   padding-bottom: 5.3125rem;
-  display: flex; }
+  display: inline-block; }
   @media screen and (max-width: 768px) {
     .slider__item {
       padding: 0;
