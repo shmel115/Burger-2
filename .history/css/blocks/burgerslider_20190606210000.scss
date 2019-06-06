@@ -51,12 +51,17 @@
     right: -0.625rem;
   }
 }
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+  display: block;
+}
 .owl-carousel {
   display: none;
   width: 100%;
   z-index: 1;
 }
-
+.owl-carousel, .owl-carousel .owl-item {
+  position: relative;
+}
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
@@ -99,7 +104,7 @@
   }
 }
 .slider__list{
-  display: flex;
+  
 }
 .ingredients {
   position: absolute;

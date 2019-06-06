@@ -320,7 +320,7 @@ template {
   font-style: normal; }
 
 @font-face {
-  font-family: 'lifehackmedium';
+  font-family: 'Lifehack';
   src: url("../../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../../fonts/lifehack_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
@@ -446,7 +446,7 @@ textarea {
   justify-content: space-between;
   text-decoration: none;
   text-align: center;
-  background: url(../../images/texture.png) center center/cover no-repeat; }
+  background: url(../images/texture.png) center center/cover no-repeat; }
 
 .main__container {
   display: flex;
@@ -1126,7 +1126,9 @@ textarea {
 
 .map__big {
   display: flex;
-  flex: 1; }
+  flex: 1;
+  height: 100%;
+  overflow: hidden; }
 
 .map {
   flex-direction: column; }
@@ -1443,41 +1445,23 @@ textarea {
     .slider__button-prev {
       right: -0.625rem; } }
 
-.no-js .owl-carousel, .owl-carousel.owl-loaded {
-  display: block; }
-
 .owl-carousel {
   display: none;
   width: 100%;
   z-index: 1; }
 
-.owl-carousel, .owl-carousel .owl-item {
-  -webkit-tap-highlight-color: transparent;
-  position: relative; }
-
 .owl-carousel .owl-stage-outer {
   position: relative;
-  overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0); }
+  overflow: hidden; }
 
 .owl-carousel .owl-stage {
-  position: relative;
-  -ms-touch-action: pan-Y; }
-
-.owl-carousel.owl-drag .owl-item {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  position: relative; }
 
 .owl-carousel .owl-item {
   min-height: 1px;
-  float: left;
-  -webkit-backface-visibility: hidden;
-  -webkit-touch-callout: none; }
+  float: left; }
 
 .owl-carousel, .owl-carousel .owl-item {
-  -webkit-tap-highlight-color: transparent;
   position: relative; }
 
 .owl-carousel .owl-stage:after {
@@ -1500,6 +1484,9 @@ textarea {
   @media screen and (max-width: 480px) {
     .slider__item {
       position: relative; } }
+
+.slider__list {
+  display: flex; }
 
 .ingredients {
   position: absolute;
@@ -1584,8 +1571,7 @@ textarea {
 
 .owl-carousel .owl-item img {
   display: block;
-  width: 100%;
-  -webkit-transform-style: preserve-3d; }
+  width: 100%; }
 
 .slider__pic {
   max-width: 98%; }

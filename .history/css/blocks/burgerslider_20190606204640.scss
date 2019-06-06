@@ -56,24 +56,27 @@
   width: 100%;
   z-index: 1;
 }
-
+.owl-carousel, .owl-carousel .owl-item {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
-
+  -webkit-transform: translate3d(0,0,0);
 }
 .owl-carousel .owl-stage {
   position: relative;
-
+  -ms-touch-action: pan-Y;
 }
-
 .owl-carousel .owl-item {
   min-height: 1px;
   float: left;
-
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
 }
 .owl-carousel, .owl-carousel .owl-item {
-
+  -webkit-tap-highlight-color: transparent;
   position: relative;
 }
 .owl-carousel .owl-stage:after {
@@ -99,7 +102,7 @@
   }
 }
 .slider__list{
-  display: flex;
+  
 }
 .ingredients {
   position: absolute;
@@ -193,7 +196,7 @@
 .owl-carousel .owl-item img {
   display: block;
   width: 100%;
-  
+  -webkit-transform-style: preserve-3d;
 }
 .slider__pic {
   max-width: 98%;

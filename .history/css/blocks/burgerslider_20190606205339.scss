@@ -56,24 +56,24 @@
   width: 100%;
   z-index: 1;
 }
+.owl-carousel, .owl-carousel .owl-item {
 
+  position: relative;
+}
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
-
 }
 .owl-carousel .owl-stage {
   position: relative;
-
 }
-
 .owl-carousel .owl-item {
   min-height: 1px;
   float: left;
 
 }
 .owl-carousel, .owl-carousel .owl-item {
-
+  
   position: relative;
 }
 .owl-carousel .owl-stage:after {
@@ -98,8 +98,11 @@
     position: relative;
   }
 }
+.slider__carusel{
+
+}
 .slider__list{
-  display: flex;
+  
 }
 .ingredients {
   position: absolute;
@@ -193,7 +196,6 @@
 .owl-carousel .owl-item img {
   display: block;
   width: 100%;
-  
 }
 .slider__pic {
   max-width: 98%;

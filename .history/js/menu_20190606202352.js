@@ -64,9 +64,9 @@ let teamAcco = () => {
           center: [55.751574, 37.573856],
           zoom: 11
       }),
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass{
           
-      )
+      }
   }
 
 const myForm = document.querySelector('#myForm');

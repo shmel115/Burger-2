@@ -60,13 +60,7 @@ let teamAcco = () => {
   teamAcco();
 
   ymaps.ready(function() {
-      var myMap = new ymaps.Map('map', {
-          center: [55.751574, 37.573856],
-          zoom: 11
-      }),
-      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          
-      )
+      var myMap = new
   }
 
 const myForm = document.querySelector('#myForm');
