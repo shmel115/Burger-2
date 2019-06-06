@@ -1402,7 +1402,9 @@ textarea {
   justify-content: center; }
 
 .slider-wrap {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
 
 .slider__options {
   display: flex;
@@ -1473,6 +1475,7 @@ textarea {
   height: 0; }
 
 .slider__item {
+  width: 67.14286rem;
   position: relative;
   padding-bottom: 5.3125rem;
   display: inline-block; }
@@ -1486,7 +1489,8 @@ textarea {
       position: relative; } }
 
 .slider__list {
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
 
 .ingredients {
   position: absolute;
