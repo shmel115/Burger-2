@@ -1464,7 +1464,9 @@ textarea {
 .container-slider{
   width: 95%;
   margin: 0 auto;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .slider__item {
   height: 100%;

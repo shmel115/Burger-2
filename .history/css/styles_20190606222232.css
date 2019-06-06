@@ -1461,13 +1461,8 @@ textarea {
   visibility: hidden;
   line-height: 0;
   height: 0; }
-.container-slider{
-  width: 95%;
-  margin: 0 auto;
-  height: 100%;
-}
+
 .slider__item {
-  height: 100%;
   width: 100vw;
   position: relative;
   display: flex;
@@ -1485,7 +1480,7 @@ textarea {
   display: inline-flex;
   overflow: hidden;
   height: 100%;
-  align-items: center; }
+align-items: center; }
 
 .ingredients {
   position: absolute;

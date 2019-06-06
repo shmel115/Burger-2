@@ -1117,6 +1117,12 @@ textarea {
   float: left;
   overflow: hidden; }
 
+.section {
+  height: 100vh;
+  min-height: 46.42857rem;
+  position: relative;
+  display: flex;
+  overflow: hidden; }
 
 .map__big {
   display: flex;
@@ -1387,8 +1393,7 @@ textarea {
 .burger {
   background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
   align-items: center;
-  justify-content: center;
-  display: block; }
+  justify-content: center; }
 
 .slider-wrap {
   overflow: hidden;
@@ -1461,13 +1466,8 @@ textarea {
   visibility: hidden;
   line-height: 0;
   height: 0; }
-.container-slider{
-  width: 95%;
-  margin: 0 auto;
-  height: 100%;
-}
+
 .slider__item {
-  height: 100%;
   width: 100vw;
   position: relative;
   display: flex;
@@ -1483,9 +1483,7 @@ textarea {
 
 .slider__list {
   display: inline-flex;
-  overflow: hidden;
-  height: 100%;
-  align-items: center; }
+  overflow: hidden; }
 
 .ingredients {
   position: absolute;
