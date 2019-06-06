@@ -1402,7 +1402,6 @@ textarea {
   justify-content: center; }
 
 .slider-wrap {
-  position: relative;
   overflow: hidden;
   width: 100%; }
 
@@ -1475,10 +1474,10 @@ textarea {
   height: 0; }
 
 .slider__item {
-  width: 67.14286rem;
+  width: 100vh;
   position: relative;
-  padding-bottom: 5.3125rem;
-  display: inline-block; }
+  display: flex;
+  align-items: center; }
   @media screen and (max-width: 768px) {
     .slider__item {
       padding: 0;
@@ -1489,7 +1488,7 @@ textarea {
       position: relative; } }
 
 .slider__list {
-  display: flex;
+  display: inline-flex;
   overflow: hidden; }
 
 .ingredients {
@@ -1546,7 +1545,6 @@ textarea {
   background-size: contain; }
 
 .slider__left {
-  widows: 40%;
   text-align: center;
   align-items: flex-end;
   display: flex;
@@ -1555,14 +1553,13 @@ textarea {
     .slider__left {
       padding-top: 0; } }
 
-.slider__right {
-  width: 60%; }
-  @media screen and (max-width: 768px) {
-    .slider__right {
-      padding: 0 13%; } }
-  @media screen and (max-width: 480px) {
-    .slider__right {
-      padding: 0 5%; } }
+@media screen and (max-width: 768px) {
+  .slider__right {
+    padding: 0 13%; } }
+
+@media screen and (max-width: 480px) {
+  .slider__right {
+    padding: 0 5%; } }
 
 @media screen and (max-width: 768px) {
   .slider__left, .slider__right {
@@ -1597,7 +1594,7 @@ img {
 
 .section__title {
   color: #f9b43b;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-family: gagalin, cursive;
   font-weight: normal;
   font-style: normal;

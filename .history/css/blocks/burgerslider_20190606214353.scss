@@ -86,11 +86,10 @@
   height: 0;
 }
 .slider__item {
-  width: 100vh;
+  width: rem(940px);
   position: relative;
-
-  display: flex;
-  align-items: center;
+  padding-bottom: 5.3125rem;
+  display: inline-block;
 
   @include tablets{
     padding: 0;
@@ -102,7 +101,7 @@
   }
 }
 .slider__list{
-  display: inline-flex;
+  display: flex;
   overflow: hidden;
 }
 .ingredients {
@@ -161,7 +160,7 @@
   background-size: contain;
 }
 .slider__left {
-
+  widows: 40%;
   text-align: center;
   align-items: flex-end;
   display: flex;
@@ -173,7 +172,7 @@
 }
 
 .slider__right {
- 
+  width: 60%;
 
   @include tablets{
     padding: 0 13%;
@@ -220,7 +219,7 @@ img {
 }
 .section__title {
   color: #f9b43b;
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: gagalin, cursive;
   font-weight: normal;
   font-style: normal;

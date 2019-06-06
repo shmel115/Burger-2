@@ -161,7 +161,7 @@
   background-size: contain;
 }
 .slider__left {
-
+  width: 40%;
   text-align: center;
   align-items: flex-end;
   display: flex;
@@ -173,7 +173,7 @@
 }
 
 .slider__right {
- 
+  width: 60%;
 
   @include tablets{
     padding: 0 13%;
