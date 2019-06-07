@@ -58,14 +58,21 @@ const myForm = document.querySelector('#myForm');
 const button = document.querySelector('#button');
 const name = document.querySelector('[name="name"]');  
 
+button.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    console.log(myForm.elements.name.value);
+    console.log(myForm.elements.phone.value);
+    console.log(myForm.elements.comment.value);
+    
+    if (myForm.elements.callback.checked == true) {
+        console.log('Не перезванивать');
+    }
 
 button.addEventListener('click', event => {
     event.preventDefault();
     let formdata = new FormData()
     formdata.append('name', name)
-    formdata.append('phone', 'name')
-    formdata.append('comment', 'name')
-    formdata.append('to', 'DelMare@mail.ru')
     fetch('https://webdev-api.loftschool.com/sendmail', {
         method: 'POST',
         body: formdata
@@ -74,7 +81,7 @@ button.addEventListener('click', event => {
       div.innerHTML = json.message
     })
 
-/*if (validateForm(myForm)) {
+if (validateForm(myForm)) {
     const data = {
         name:myForm.elements.name.value,
         phone:myForm.elements.phone.value,
@@ -84,7 +91,7 @@ button.addEventListener('click', event => {
     const xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
     xhr.send(JSON.stringify(data));
-    }*/
+    }
 });
 
 function validateForm(form) {

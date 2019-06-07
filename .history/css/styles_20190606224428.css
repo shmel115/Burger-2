@@ -933,9 +933,7 @@ textarea {
   position: relative;
   display: flex;
   overflow: hidden; }
-.team-accordeon__item.active .team-accordeon__about{
-  display: inline;
-}
+
 .team__container {
   position: absolute;
   right: 0;

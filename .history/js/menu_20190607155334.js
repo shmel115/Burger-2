@@ -85,7 +85,7 @@ button.addEventListener('click', event => {
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
     xhr.send(JSON.stringify(data));
     }*/
-});
+
 
 function validateForm(form) {
     let valid = true;

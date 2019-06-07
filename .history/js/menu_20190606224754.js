@@ -35,16 +35,30 @@ const blockList = document.querySelector('.block-list')
               })
 
 let teamAcco = () => {
-    $(".team-accordeon__item").on("click", function(e) {
+    $(".team-accordeon__link").on("click", e => {
       e.preventDefault();
-        $(this).toggleClass('active')
-     console.log($(this))
+
+      const item = $this.closest(".team-accordeon__item");
+      const container = $this.closest(".team-accordeon");
+      const items = $(".team-accordeon__item", container);
+      const content = item.find(".team-accordeon__about");
+      const otherContent = $(".team-accordeon__about", container);
+
+      if (!item.hasClass("is-active")) {
+        items.removeClass("is-active");
+        item.addClass("is-active");
+        otherContent.stop(true).slideUp();
+        content.stop(true).slideDown();
+      } else {
+        item.removeClass("is-active");
+        content.stop(true).slideUp();
+      }
     });
   };
 
   teamAcco();
 
-  /*ymaps.ready(function() {
+  ymaps.ready(function() {
       var myMap = new ymaps.Map('map', {
           center: [55.751574, 37.573856],
           zoom: 11
@@ -52,20 +66,25 @@ let teamAcco = () => {
       MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
           
       )
-  })*/
+  }
 
 const myForm = document.querySelector('#myForm');
-const button = document.querySelector('#button');
-const name = document.querySelector('[name="name"]');  
+const button = document.querySelector('#button');  
 
+button.addEventListener('click', function(event) {
+    event.preventDefault();
 
+    console.log(myForm.elements.name.value);
+    console.log(myForm.elements.phone.value);
+    console.log(myForm.elements.comment.value);
+    
+    if (myForm.elements.callback.checked == true) {
+        console.log('Не перезванивать');
+    }
+});
 button.addEventListener('click', event => {
     event.preventDefault();
-    let formdata = new FormData()
-    formdata.append('name', name)
-    formdata.append('phone', 'name')
-    formdata.append('comment', 'name')
-    formdata.append('to', 'DelMare@mail.ru')
+    let formdata = new FormData(button)
     fetch('https://webdev-api.loftschool.com/sendmail', {
         method: 'POST',
         body: formdata
@@ -74,7 +93,7 @@ button.addEventListener('click', event => {
       div.innerHTML = json.message
     })
 
-/*if (validateForm(myForm)) {
+if (validateForm(myForm)) {
     const data = {
         name:myForm.elements.name.value,
         phone:myForm.elements.phone.value,
@@ -84,7 +103,7 @@ button.addEventListener('click', event => {
     const xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
     xhr.send(JSON.stringify(data));
-    }*/
+    }
 });
 
 function validateForm(form) {

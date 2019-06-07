@@ -63,9 +63,6 @@ button.addEventListener('click', event => {
     event.preventDefault();
     let formdata = new FormData()
     formdata.append('name', name)
-    formdata.append('phone', 'name')
-    formdata.append('comment', 'name')
-    formdata.append('to', 'DelMare@mail.ru')
     fetch('https://webdev-api.loftschool.com/sendmail', {
         method: 'POST',
         body: formdata
@@ -74,7 +71,7 @@ button.addEventListener('click', event => {
       div.innerHTML = json.message
     })
 
-/*if (validateForm(myForm)) {
+if (validateForm(myForm)) {
     const data = {
         name:myForm.elements.name.value,
         phone:myForm.elements.phone.value,
@@ -84,7 +81,7 @@ button.addEventListener('click', event => {
     const xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
     xhr.send(JSON.stringify(data));
-    }*/
+    }
 });
 
 function validateForm(form) {

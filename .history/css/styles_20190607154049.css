@@ -934,7 +934,7 @@ textarea {
   display: flex;
   overflow: hidden; }
 .team-accordeon__item.active .team-accordeon__about{
-  display: inline;
+  display: block;
 }
 .team__container {
   position: absolute;
@@ -1496,8 +1496,7 @@ textarea {
 .ingredients {
   position: absolute;
   top: 1.25rem;
-  background: rgba(227, 80, 40, 0.4);
-  width: 5.625rem;
+  width: 3.625rem;
   height: 5.625rem;
   border-radius: 0.3125rem;
   transition: 300ms;
@@ -1534,7 +1533,6 @@ textarea {
   opacity: 0.5;
   background: url(images/weight.png) 50% no-repeat;
   width: 4.0625rem;
-  height: 3.75rem;
   background-size: contain;
  }
   @media screen and (max-width: 768px) {

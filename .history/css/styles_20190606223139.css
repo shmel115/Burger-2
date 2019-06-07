@@ -933,9 +933,7 @@ textarea {
   position: relative;
   display: flex;
   overflow: hidden; }
-.team-accordeon__item.active .team-accordeon__about{
-  display: inline;
-}
+
 .team__container {
   position: absolute;
   right: 0;
@@ -1119,12 +1117,6 @@ textarea {
   float: left;
   overflow: hidden; }
 
-.section {
-  height: 100vh;
-  min-height: 46.42857rem;
-  position: relative;
-  display: flex;
-  overflow: hidden; }
 
 .map__big {
   display: flex;
@@ -1140,12 +1132,6 @@ textarea {
   background-size: cover;
   align-items: center; }
 
-.section {
-  height: 100%;
-  min-height: 40.625rem;
-  position: relative;
-  display: flex;
-  overflow: hidden; }
 
 .container {
   max-width: 58.75rem;
@@ -1401,7 +1387,8 @@ textarea {
 .burger {
   background: linear-gradient(to bottom, #f9b43b 0%, #eb8c38 40%, #eb8c38 60%, #eb8c38 60%, #f9b43b 100%);
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  display: block; }
 
 .slider-wrap {
   overflow: hidden;
@@ -1474,8 +1461,13 @@ textarea {
   visibility: hidden;
   line-height: 0;
   height: 0; }
-
+.container-slider{
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+}
 .slider__item {
+  height: 100%;
   width: 100vw;
   position: relative;
   display: flex;
@@ -1491,7 +1483,9 @@ textarea {
 
 .slider__list {
   display: inline-flex;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100%;
+  align-items: center; }
 
 .ingredients {
   position: absolute;
@@ -1531,12 +1525,7 @@ textarea {
   position: absolute;
   bottom: 0px;
   left: 0;
-  opacity: 0.5;
-  background: url(images/weight.png) 50% no-repeat;
-  width: 4.0625rem;
-  height: 3.75rem;
-  background-size: contain;
- }
+  opacity: 0.5; }
   @media screen and (max-width: 768px) {
     .burger-weight {
       top: 0;
@@ -1544,12 +1533,15 @@ textarea {
       bottom: auto;
       left: auto; } }
 
+.burger-weight {
+  background: url(images/weight.png) 50% no-repeat;
+  width: 4.0625rem;
+  height: 3.75rem;
+  position: relative;
+  background-size: contain; }
 
-.slider__right{
-  width: 50%;
-}
 .slider__left {
-  width: 35%;
+  width: 50%;
   text-align: center;
   align-items: flex-end;
   display: flex;
@@ -1578,12 +1570,7 @@ textarea {
 .owl-carousel .owl-item img {
   display: block;
   width: 100%; }
-.container-slider{
-  position: relative;
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-}
+
 .slider__pic {
   max-width: 98%; }
   @media screen and (max-width: 768px) {
@@ -1598,7 +1585,9 @@ img {
 
 .slider__right .section__title {
   line-height: 1em; }
-
+.slider__right{
+    width: 50%;
+  }
 .burgers .section__title {
   margin: 0.625rem 0 1.875rem 0.625rem; }
 
