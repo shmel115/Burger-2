@@ -158,66 +158,6 @@ function showElem(n) {
     
   }
 
-  var slides = document.getElementsByClassName("slider__item"),
-   prev = document.querySelector(".prev"),
- next =    document.querySelector(".next");
-var slideIndex = 1; 
-showElem(slideIndex);
-prev.addEventListener('click', (e) => {
-  e.preventDefault()
-  showElem(slideIndex -=1)
-})
-next.addEventListener('click', (e) => {
-  e.preventDefault()
-  showElem(slideIndex += 1)
-})
-
-function showElem(n) {
-  var i;
-  if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";   
-    
-  }
-
-  document.body.addEventListener('wheel', function(e){
-    console.log(e.deltaY)
-      const section = document.querySelector('.active')
-      if(e.deltaY > 0) {
-              
-              console.log(section)
-           let id = +section.getAttribute('id').slice(1) + 1
-              console.log(id)
-           let elemNext = document.getElementById('s' + id) || false
-              
-              if(elemNext){
-                      section.classList.remove('active')
-                      //section.setAttribute('style', '')
-                      elemNext.classList.add('active')
-                      elemNext.style.transform = `translate3d(0, ${-100 * id}%, 0)`
-                          
-                  }
-      }
-      if(e.deltaY < 0) {
-              let id = +section.getAttribute('id').slice(1) - 1
-              console.log(id)
-           let elemNext = document.getElementById('s' + id) || false
-              
-              if(elemNext){
-                      section.classList.remove('active')
-                      section.setAttribute('style', '')
-                      elemNext.classList.add('active')
-                      elemNext.style.transform = `translate3d(0, ${-100 * id}%, 0)`
-                          
-                  }
-      }
-  })
+  
 }
             

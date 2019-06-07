@@ -44,38 +44,15 @@ let teamAcco = () => {
 
   teamAcco();
 
-  ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-            center: [59.92606548, 30.32610869],
-            zoom: 11
-        }),
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-        myPlacemark = new ymaps.Placemark([59.92606548, 30.32610869], {
-            hintContent: 'Mr.Burger',
-            balloonContent: 'Это наше описание',
-        }, {
-            iconLayout: 'default#imageWithContent',
-            iconImageHref: '../images/map-marker.png',
-            iconImageSize: [46, 57],
-            iconImageOffset: [-24, -24],
-            iconContentLayout: MyIconContentLayout
-        })
-    myPlacemark2 = new ymaps.Placemark([59.760003, 30.553142], {
-        hintContent: 'Mr.Burger',
-        balloonContent: 'Это наше описание',
-    }, {
-        iconLayout: 'default#imageWithContent',
-        iconImageHref: '../images/map-marker.png',
-        iconImageSize: [46, 57],
-        iconImageOffset: [-24, -24],
-        iconContentLayout: MyIconContentLayout
-    })
-    myMap.geoObjects
-        .add(myPlacemark)
-        .add(myPlacemark2)
-})
+  /*ymaps.ready(function() {
+      var myMap = new ymaps.Map('map', {
+          center: [55.751574, 37.573856],
+          zoom: 11
+      }),
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          
+      )
+  })*/
 
 const myForm = document.querySelector('#myForm');
 const button = document.querySelector('#button');
@@ -157,67 +134,5 @@ function showElem(n) {
     slides[slideIndex - 1].style.display = "block";   
     
   }
-
-  var slides = document.getElementsByClassName("slider__item"),
-   prev = document.querySelector(".prev"),
- next =    document.querySelector(".next");
-var slideIndex = 1; 
-showElem(slideIndex);
-prev.addEventListener('click', (e) => {
-  e.preventDefault()
-  showElem(slideIndex -=1)
-})
-next.addEventListener('click', (e) => {
-  e.preventDefault()
-  showElem(slideIndex += 1)
-})
-
-function showElem(n) {
-  var i;
-  if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";   
-    
-  }
-
-  document.body.addEventListener('wheel', function(e){
-    console.log(e.deltaY)
-      const section = document.querySelector('.active')
-      if(e.deltaY > 0) {
-              
-              console.log(section)
-           let id = +section.getAttribute('id').slice(1) + 1
-              console.log(id)
-           let elemNext = document.getElementById('s' + id) || false
-              
-              if(elemNext){
-                      section.classList.remove('active')
-                      //section.setAttribute('style', '')
-                      elemNext.classList.add('active')
-                      elemNext.style.transform = `translate3d(0, ${-100 * id}%, 0)`
-                          
-                  }
-      }
-      if(e.deltaY < 0) {
-              let id = +section.getAttribute('id').slice(1) - 1
-              console.log(id)
-           let elemNext = document.getElementById('s' + id) || false
-              
-              if(elemNext){
-                      section.classList.remove('active')
-                      section.setAttribute('style', '')
-                      elemNext.classList.add('active')
-                      elemNext.style.transform = `translate3d(0, ${-100 * id}%, 0)`
-                          
-                  }
-      }
-  })
 }
             

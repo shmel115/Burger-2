@@ -619,7 +619,6 @@ textarea {
 .nav__item:after {
   content: "";
   display: block;
-  vertical-align: middle;
   width: 0.25rem;
   height: 0.25rem;
   border-radius: 50%;
@@ -933,7 +932,9 @@ textarea {
   position: relative;
   display: flex;
   overflow: hidden; }
-
+.team-accordeon__item.active .team-accordeon__about{
+  display: inline;
+}
 .team__container {
   position: absolute;
   right: 0;
@@ -1529,7 +1530,12 @@ textarea {
   position: absolute;
   bottom: 0px;
   left: 0;
-  opacity: 0.5; }
+  opacity: 0.5;
+  background: url(images/weight.png) 50% no-repeat;
+  width: 4.0625rem;
+  height: 3.75rem;
+  background-size: contain;
+ }
   @media screen and (max-width: 768px) {
     .burger-weight {
       top: 0;
@@ -1537,14 +1543,12 @@ textarea {
       bottom: auto;
       left: auto; } }
 
-.burger-weight {
-  background: url(images/weight.png) 50% no-repeat;
-  width: 4.0625rem;
-  height: 3.75rem;
-  position: relative;
-  background-size: contain; }
 
+.slider__right{
+  width: 50%;
+}
 .slider__left {
+  width: 35%;
   text-align: center;
   align-items: flex-end;
   display: flex;
@@ -1573,7 +1577,12 @@ textarea {
 .owl-carousel .owl-item img {
   display: block;
   width: 100%; }
-
+.container-slider{
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
 .slider__pic {
   max-width: 98%; }
   @media screen and (max-width: 768px) {

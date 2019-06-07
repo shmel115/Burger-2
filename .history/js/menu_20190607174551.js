@@ -185,39 +185,6 @@ function showElem(n) {
     }
     slides[slideIndex - 1].style.display = "block";   
     
-  }
-
-  document.body.addEventListener('wheel', function(e){
-    console.log(e.deltaY)
-      const section = document.querySelector('.active')
-      if(e.deltaY > 0) {
-              
-              console.log(section)
-           let id = +section.getAttribute('id').slice(1) + 1
-              console.log(id)
-           let elemNext = document.getElementById('s' + id) || false
-              
-              if(elemNext){
-                      section.classList.remove('active')
-                      //section.setAttribute('style', '')
-                      elemNext.classList.add('active')
-                      elemNext.style.transform = `translate3d(0, ${-100 * id}%, 0)`
-                          
-                  }
-      }
-      if(e.deltaY < 0) {
-              let id = +section.getAttribute('id').slice(1) - 1
-              console.log(id)
-           let elemNext = document.getElementById('s' + id) || false
-              
-              if(elemNext){
-                      section.classList.remove('active')
-                      section.setAttribute('style', '')
-                      elemNext.classList.add('active')
-                      elemNext.style.transform = `translate3d(0, ${-100 * id}%, 0)`
-                          
-                  }
-      }
-  })
+  });
 }
             

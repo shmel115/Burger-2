@@ -1024,7 +1024,7 @@ textarea {
   float: left; }
 
 .team-accordeon__img {
-  background-image: url(../../images/daniel.jpg) center center/cover no-repeat;
+  background-image: url(../../images/daniel.jpg);
   display: inline-block;
   vertical-align: top;
   width: 6.25rem;

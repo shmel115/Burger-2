@@ -185,7 +185,7 @@ function showElem(n) {
     }
     slides[slideIndex - 1].style.display = "block";   
     
-  }
+  
 
   document.body.addEventListener('wheel', function(e){
     console.log(e.deltaY)
