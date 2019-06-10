@@ -149,7 +149,7 @@ function validateField(field) {
     
 
 //Слайдер-меню бургеров горизонтальное
-var slides = document.getElementsByClassName("slider__item"),
+var slides = document.getElementsByClassName("slider__list"),
 prev = document.querySelector("prev"),
 next = document.querySelector("next");
 var slideIndex = 1; 
