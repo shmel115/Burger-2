@@ -150,8 +150,8 @@ function validateField(field) {
 
 //Слайдер-меню бургеров горизонтальное
 var slides = document.getElementsByClassName("slider__item"),
-prev = document.querySelector("#prev"),
-next = document.querySelector("#next");
+prev = document.querySelector("prev"),
+next = document.querySelector("next");
 var slideIndex = 1; 
 showElem(slideIndex);
 prev.addEventListener('click', (e) => {
@@ -175,7 +175,7 @@ function showElem(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slides[slideIndex - 1].style.display = "flex";   
+    slides[slideIndex - 1].style.display = "block";   
     
   }
 
