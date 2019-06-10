@@ -1,0 +1,78 @@
+.block{
+  position: relative;  
+  background-image: url(../images/menu.png) 50% no-repeat;
+  background-size: cover;
+}
+.block__title{
+  position: absolute;
+	top: 10%;
+	left: 10%;
+  color: white;
+  font-size: 4.5rem;
+  font-family: gagalin;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.block-list{
+  position: absolute;
+  display: flex;
+  right: 0;
+  height: 100%;
+  margin: 0;
+
+  
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    }
+  
+    &:after {
+      clear: both;
+    }
+}
+.block-list__item {
+  display: inherit;
+  width: 57px;
+}
+
+.block-list__item.active {
+  width: auto;
+}
+.block-list__title {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);  
+  padding: 2rem 1rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0;
+
+  font-size: 2rem;
+  color: #fff;
+  font-family: gagalin;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  white-space: nowrap;  
+}
+
+.block-list__desc{
+  font-family: ubuntu;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: #fff;
+  padding: 3.75rem 1.875rem;
+  width: 25rem;
+  line-height: 1.8;
+  background: rgba(47, 50, 52, 0.93);
+  background-size: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
