@@ -1581,6 +1581,7 @@ textarea {
 .ingredients {
   position: absolute;
   top: 1.25rem;
+  width: 5.625rem;
   height: 5.625rem;
   border-radius: 0.3125rem;
   transition: 300ms;

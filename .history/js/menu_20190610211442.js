@@ -1,10 +1,10 @@
 //Слайдер меню-боковое
 window.onload = function(){
-const blockList = document.querySelector('.block-list')
+const blockList = document.querySelector('block-list')
           
               blockList.addEventListener('click', function (e) {
                 e.preventDefault()
-                  if (e.target.className === '.block-list__item') {
+                  if (e.target.className === 'block-list__item') {
                       e.target.parentElement.classList.toggle('active')
                       const itenId = localStorage.getItem('itenId')
                       localStorage.setItem('itenId', e.target.parentElement.id)
@@ -149,7 +149,7 @@ function validateField(field) {
     
 
 //Слайдер-меню бургеров горизонтальное
-var slides = document.getElementsByClassName(".slider__list"),
+var slides = document.getElementsByClassName(".slider__item"),
 prev = document.querySelector("prev"),
 next = document.querySelector("next");
 var slideIndex = 1; 
