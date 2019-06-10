@@ -113,7 +113,6 @@ button.addEventListener('click', event => {
     .then(json => {
       div.innerHTML = json.message
     });
-    
 
 /*if (validateForm(myForm)) {
     const data = {
@@ -146,12 +145,11 @@ function validateField(field) {
         field.nextElementSibling.textContent = field.validationMessage;
         return field.checkValidity();
     }
-    
 
 //Слайдер-меню бургеров горизонтальное
-var slides = document.getElementsByClassName(".slider__item"),
-prev = document.querySelector("prev"),
-next = document.querySelector("next");
+var slides = document.getElementsByClassName("item"),
+prev = document.querySelector(".prev"),
+next = document.querySelector(".next");
 var slideIndex = 1; 
 showElem(slideIndex);
 prev.addEventListener('click', (e) => {
@@ -178,6 +176,34 @@ function showElem(n) {
     
   }
 
+  var slides = document.getElementsByClassName(".slider__item"),
+   prev = document.querySelector(".prev"),
+ next =    document.querySelector(".next");
+var slideIndex = 1; 
+showElem(slideIndex);
+prev.addEventListener('click', (e) => {
+  e.preventDefault()
+  showElem(slideIndex -=1)
+})
+next.addEventListener('click', (e) => {
+  e.preventDefault()
+  showElem(slideIndex += 1)
+})
+
+function showElem(n) {
+  var i;
+  if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";   
+    
+  }
   
   document.body.addEventListener('wheel', function(e){
     console.log(e.deltaY)
@@ -212,7 +238,7 @@ function showElem(n) {
       }
   })
 //Слайдер вертикальный
-const sections = $('.section');
+/*const sections = $('.section');
 const display = $('.wrapper-content');
 
 let inscroll = false;
@@ -311,7 +337,68 @@ if (isMobile) {
       scrollToSection(nextOrPrev);
     }
   });
-}
+}*/
+
+let mult = true;
+const arrSection = document.querySelectorAll('.section').length
+const nav = document.querySelector('.nav__list')
+document.body.addEventListener('wheel', function(e){
+  console.log(e.deltaY)
+
+	if(mult) {
+		mult = false
+	const section = document.querySelector('.active')
+	if(e.deltaY > 0) {
+		window.deltaY = 100
+			console.log(section)
+		 let id = +section.getAttribute('id').slice(1) + 1
+			console.log(id)
+		 let elemNext = document.getElementById('s' + id) || false
+			
+			if(elemNext){
+					section.classList.remove('active')
+				//	section.setAttribute('style', '')
+					elemNext.classList.add('active')
+					elemNext.style.transform = `translate3d(0, ${-100 * id}%, 0)`
+						
+				}
+	}
+	if(e.deltaY < 0) {
+			let id = +section.getAttribute('id').slice(1) - 1
+			console.log(id)
+		 let elemNext = document.getElementById('s' + id) || false
+			
+			if(elemNext){
+					section.classList.remove('active')
+				section.setAttribute('style', '')
+					elemNext.classList.add('active')
+					elemNext.style.transform = `translate3d(0, ${-100 * id}%, 0)`
+						
+				}
+	}
+		setTimeout(()=>{mult = true}, 1300)
+	}
+})
+
+nav.addEventListener('click', (e) =>{
+	e.preventDefault()
+	if(e.target.className === 'link'){
+		const element = e.target
+		
+		const id = +element.getAttribute('id').slice(1)
+		const section = document.querySelector('.active')
+		let elemNext = document.getElementById('s' + id) || false
+			
+			if(elemNext && elemNext != section){
+					section.classList.remove('active')
+					
+					elemNext.classList.add('active')
+					document.querySelector('.wrapper').style.transform = `translate3d(0, ${(-100 / arrSection) * id}%, 0)`
+
+				}
+		
+	}
+})
 
 //видео
 let player;

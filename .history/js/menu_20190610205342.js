@@ -179,6 +179,7 @@ function showElem(n) {
   }
 
   
+  
   document.body.addEventListener('wheel', function(e){
     console.log(e.deltaY)
       const section = document.querySelector('.active')

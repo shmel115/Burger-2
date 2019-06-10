@@ -33,7 +33,7 @@ const blockList = document.querySelector('.block-list')
                       }
                   }
           
-              })
+              
 //Cлайдер-меню команды
   let teamAcco = () => {
         $(".team-accordeon__link").on("click", e => {
@@ -113,7 +113,6 @@ button.addEventListener('click', event => {
     .then(json => {
       div.innerHTML = json.message
     });
-    
 
 /*if (validateForm(myForm)) {
     const data = {
@@ -146,12 +145,11 @@ function validateField(field) {
         field.nextElementSibling.textContent = field.validationMessage;
         return field.checkValidity();
     }
-    
 
 //Слайдер-меню бургеров горизонтальное
-var slides = document.getElementsByClassName(".slider__item"),
-prev = document.querySelector("prev"),
-next = document.querySelector("next");
+var slides = document.getElementsByClassName("item"),
+prev = document.querySelector(".prev"),
+next = document.querySelector(".next");
 var slideIndex = 1; 
 showElem(slideIndex);
 prev.addEventListener('click', (e) => {
@@ -178,6 +176,34 @@ function showElem(n) {
     
   }
 
+  var slides = document.getElementsByClassName(".slider__item"),
+   prev = document.querySelector(".prev"),
+ next =    document.querySelector(".next");
+var slideIndex = 1; 
+showElem(slideIndex);
+prev.addEventListener('click', (e) => {
+  e.preventDefault()
+  showElem(slideIndex -=1)
+})
+next.addEventListener('click', (e) => {
+  e.preventDefault()
+  showElem(slideIndex += 1)
+})
+
+function showElem(n) {
+  var i;
+  if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";   
+    
+  }
   
   document.body.addEventListener('wheel', function(e){
     console.log(e.deltaY)

@@ -721,7 +721,7 @@ textarea {
   transition: .3s; }
 
 .best {
-  background: url(../images/bg.png) center center no-repeat;
+  background: url(../../images/bg.png) center center no-repeat;
   background-size: cover;
   text-align: center;
   display: flex;
