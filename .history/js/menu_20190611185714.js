@@ -68,7 +68,7 @@ const blockList = document.querySelector('.block-list')
             MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
                 '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
             ),
-            myPlacemark = new ymaps.Placemark([59.896152, 30.424465], {
+            myPlacemark = new ymaps.Placemark([59.891295, 30.316907], {
                 hintContent: 'Собственный значок метки с контентом1',
                 balloonContent: 'Это наше описание',
             }, {
