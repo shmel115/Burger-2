@@ -145,8 +145,7 @@ function validateForm(form) {
 function validateField(field) {
         field.nextElementSibling.textContent = field.validationMessage;
         return field.checkValidity();
-    }
-    
+    }    
 
 //Слайдер-меню бургеров горизонтальное
 var slides = document.getElementsByClassName("slider__item"),
@@ -415,6 +414,18 @@ function formatTime(time) {
 
   return minutes + ":" + formatedSeconds;
     }
+
+    let fancyboxModal = () => {
+      $(".rewiews__button").fancybox({
+        touch: true,
+        smallBtn: false
+      });
+      $(".full-review__close").on("click", e => {
+        e.preventDefault();
+        $.fancybox.close();
+      });
+    };
+    fancyboxModal(); 
   }
 
   
