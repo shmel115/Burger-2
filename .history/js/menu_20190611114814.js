@@ -415,6 +415,29 @@ function formatTime(time) {
 
   return minutes + ":" + formatedSeconds;
     }
+    //выпадашка
+let button = document.querySelectorAll('button')
+let close = 
+Array.from(button).map(elem => { elem.addEventListener('click', (e)=>{
+  let close = document.createElement('i')
+  close.innerHTML = '+'
+  let text = e.target.parentNode.children[0].innerHTML
+  console.log(e.target.parentNode.children[0].innerText)
+   const div = document.createElement('div.v')
+   const p = document.createElement('p')
+   p.innerHTML = text
+  div.appendChild(p)
+  p.appendChild(close)
+  
+  close.addEventListener('click', changeClose)
+   
+document.body.appendChild(div)
+})
+})
+function changeClose(){
+  let div = document.querySelector('div.v')
+  document.body.removeChild(div)
+}
   }
 
   

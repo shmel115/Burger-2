@@ -26,8 +26,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0;
-  overflow: hidden; }
+  margin: 0; }
 
 /**
  * Render the `main` element consistently in IE.
@@ -362,6 +361,7 @@ html {
 html, body {
   width: 100%;
   height: 100%;
+  overflow: visible;
   margin: 0; }
 
 body {
@@ -499,10 +499,12 @@ textarea {
 .wrapper {
   position: relative;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .wrapper-content {
-  height: 100%;  }
+  height: 100%;
+   }
 
 .name {
   padding-top: 8.21429rem; }
@@ -713,9 +715,6 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center; }
-  @media screen and (max-width: 480px) {
-    .pagination__down {
-      bottom: -5rem; } }
   .pagination__down:hover .pagination__img {
     margin-top: -1.07143rem; }
 
@@ -924,6 +923,7 @@ textarea {
   transition: 300ms;
   border: 1px solid transparent;
   outline: none; }
+
 .team {
   background: url(../images/teampic.jpg) center center no-repeat;
   background-size: cover;
@@ -1167,7 +1167,7 @@ textarea {
   background-position: center center;
   background-repeat: no-repeat;
   text-decoration: none;
-  position: relative;}
+  position: relative; }
   @media screen and (max-width: 480px) {
     .menu-acco__trigger {
       width: 3.57143rem; } }
@@ -1183,8 +1183,7 @@ textarea {
   transform-origin: 0 0;
   left: 50%;
   top: 100%;
-  margin-top: -1.42857rem;
-  cursor: pointer; }
+  margin-top: -1.42857rem; }
   @media screen and (max-width: 480px) {
     .menu-acco__trigger-text {
       font-size: 1.85714rem; } }
@@ -1201,7 +1200,7 @@ textarea {
 .menu-acco__text {
   font-family: Ubuntu;
   font-weight: 300;
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: #fff;
   padding: 4.28571rem 2.14286rem;
   width: 100%;
@@ -1598,8 +1597,7 @@ textarea {
   @media screen and (max-width: 480px) {
     .ingredients {
       position: static;
-      margin-top: -4.625rem;
-      margin-right: 20rem; } }
+      margin-top: -4.625rem; } }
 
 .ingredients__icon {
   height: 60%;
@@ -1625,10 +1623,6 @@ textarea {
       right: 0;
       bottom: auto;
       left: auto; } }
-      @media screen and (max-width: 480px) {
-        .burger-weight {
-          margin-left: 5rem;
-          margin-top: 0.5rem; } }
 
 
 

@@ -924,6 +924,7 @@ textarea {
   transition: 300ms;
   border: 1px solid transparent;
   outline: none; }
+
 .team {
   background: url(../images/teampic.jpg) center center no-repeat;
   background-size: cover;
