@@ -80,7 +80,7 @@ const blockList = document.querySelector('.block-list')
                 iconImageOffset: [-24, -24],
                 iconContentLayout: MyIconContentLayout
             })
-        myPlacemark2 = new ymaps.Placemark(myMap.getCenter([59.891295, 30.316907]), {
+        myPlacemark2 = new ymaps.Placemark([59.891295, 30.316907], {
             hintContent: 'Собственный значок метки с контентом2',
             balloonContent: 'Это наше описание',
         }, {
