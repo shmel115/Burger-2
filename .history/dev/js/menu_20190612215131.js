@@ -75,7 +75,7 @@ const blockList = document.querySelector('.block-list')
                 balloonContent: 'Это наше описание',
             }, {
                 iconLayout: 'default#imageWithContent',
-                iconImageHref: '../images/point.png',
+                iconImageHref: '../../point.png',
                 iconImageSize: [46, 57],
                 iconImageOffset: [-24, -24],
                 iconContentLayout: MyIconContentLayout
