@@ -344,6 +344,18 @@ for( let i = 0; i < buttonReviews.length; i++) {
 reviewsPopup.addEventListener('click' , function() {
   reviewsPopup.classList.remove('open-js');
   });
+  let fancyboxModal = () => {
+    $(".rewiews__button").fancybox({
+      touch: true,
+      smallBtn: false
+    });
+    $(".full-review__close").on("click", e => {
+      e.preventDefault();
+      $.fancybox.close();
+    });
+  };
+  fancyboxModal(); 
+}
 function onPlayerReady(event) {
   const duration = player.getDuration();
   let interval;

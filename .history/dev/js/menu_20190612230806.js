@@ -85,7 +85,7 @@ const blockList = document.querySelector('.block-list')
             balloonContent: 'Это наше описание',
         }, {
             iconLayout: 'default#imageWithContent',
-            iconImageHref: './point.png',
+            iconImageHref: '../images/point.png',
             iconImageSize: [46, 57],
             iconImageOffset: [-24, -24],
             iconContentLayout: MyIconContentLayout
@@ -337,13 +337,7 @@ function onYouTubeIframeAPIReady() {
     }
   });
 }
-for( let i = 0; i < buttonReviews.length; i++) {
-  buttonReviews[i].onclick = function(){
-  reviewsPopup.classList.add('open-js')}}
-          
-reviewsPopup.addEventListener('click' , function() {
-  reviewsPopup.classList.remove('open-js');
-  });
+
 function onPlayerReady(event) {
   const duration = player.getDuration();
   let interval;
@@ -423,17 +417,13 @@ function formatTime(time) {
   return minutes + ":" + formatedSeconds;
     }
 
-    let fancyboxModal = () => {
-      $(".rewiews__button").fancybox({
-        touch: true,
-        smallBtn: false
-      });
-      $(".full-review__close").on("click", e => {
-        e.preventDefault();
-        $.fancybox.close();
-      });
-    };
-    fancyboxModal(); 
+    for( let i = 0; i < buttonReviews.length; i++) {
+      buttonReviews[i].onclick = function(){
+      reviewsPopup.classList.add('open-js')}}
+              
+  reviewsPopup.addEventListener('click' , function() {
+      reviewsPopup.classList.remove('open-js');
+      }
   }
 
   

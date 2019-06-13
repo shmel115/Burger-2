@@ -337,13 +337,7 @@ function onYouTubeIframeAPIReady() {
     }
   });
 }
-for( let i = 0; i < buttonReviews.length; i++) {
-  buttonReviews[i].onclick = function(){
-  reviewsPopup.classList.add('open-js')}}
-          
-reviewsPopup.addEventListener('click' , function() {
-  reviewsPopup.classList.remove('open-js');
-  });
+
 function onPlayerReady(event) {
   const duration = player.getDuration();
   let interval;

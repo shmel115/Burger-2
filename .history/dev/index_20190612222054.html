@@ -10,17 +10,6 @@
 </head>
 <body>
     <div class="wrapper">
-      <div class="reviews-popup">
-      <div class="container jc-centr">
-        <div class="reviews-popup__wrapper">
-          <h4 class="reviews__title rewiews--black">Константин Спилберг</h4>
-          <p class="rewiews__desk rewiews--black">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-          <button class="close-reviews">
-            <span class="close-reviews__lines"></span>
-          </button>
-        </div>
-      </div>
-      </div>
       <div class="wrapper-content">
         <section class="section main active">        
           <div class="container">
@@ -323,7 +312,7 @@
                     <div class="rewiews__block">
                         <h4 class="rewiews__name">Константин Спилберг</h4>
                         <p class="rewiews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                        <button class="rewiews__button">Подробнее</button>
+                        <button class="rewiews__button" onclick="bopen();">Подробнее</button>
                       </div>
                   </div>
                 </li>
@@ -333,7 +322,7 @@
                       <div class="rewiews__block">
                         <h4 class="rewiews__name">Константин Спилберг</h4>
                         <p class="rewiews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-                        <button class="rewiews__button">Подробнее</button>
+                        <button class="rewiews__button" onclick="bopen();">Подробнее</button>
                       </div>
                     </div>
                   </li>
@@ -596,20 +585,22 @@
                         <a href="" class="pagination__link" data-scroll-to="8"></a>
                         </li>
                     </ul>
-                    <div class="full-review popup" id="full-review">
-                        <a class="full-review__close" href="#">
+                    <div class="full-review popup" id="full-review" style="left: 0.5px; position:absolute; top:118.5px; z-index: 9999; opacity: 0; display:none;">
+                      <div class="full-review__inner">
+                        <div class="full-review__title">Констнтин Спилберг</div>
+                        <div class="full-review__content">
+                          Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
+                          мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять,
+                          невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
+                          расплавленным.
+                  
+                        </div>
+                      </div>  
+                      <div id="popupclose"></div>
+                      <a class="full-review__close" href="#" onclick="bclose();">
                           <img class="full-review__close-btn" src="../images/8783.png">                        
                         </a>
-                        <div class="full-review__inner">
-                          <div class="full-review__title">Констнтин Спилберг</div>
-                          <div class="full-review__content">
-                            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими
-                            мягкими, котлетка такой сочной, а сыр таким расплавленным. Мысли все о них и о них, о них и о них. Нельзя устоять,
-                            невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                            расплавленным.
-                    
-                          </div>
-                        </div>
+                        
                       </div>
             
 

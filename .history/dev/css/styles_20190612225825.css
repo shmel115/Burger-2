@@ -565,17 +565,7 @@ textarea {
 .close-reviews__lines {
   background: transparent;
 }
-.close-reviews__lines, .close-reviews__lines:after, .close-reviews__lines:before {
-  position: absolute;
-  width: 100%;
-  height: 0.1875rem;
-  background-color: #fff;
-  border-radius: 0.1875rem;
-  transition: 0.5s;
-  top: 34%;
-  right: 0%;
-  background-color: #ec8569;
-}  
+  
 .name {
   padding-top: 8.21429rem; }
   @media screen and (max-width: 768px) {
