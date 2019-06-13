@@ -672,11 +672,11 @@ textarea {
           opacity: 0;
           transition: .3s;	}
       
-          .pagination__link:hover {
-            .pagination__link:before {
+          .pagination__link:hover .pagination__link:before {
             width: rem(14px);
             height: rem(14px);
-            opacity: 1;	}	} }
+            opacity: 1;	 
+          }
       
       .pagination__pages-item{
         margin-bottom: rem(5px);}
